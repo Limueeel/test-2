@@ -1,0 +1,382 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+header {
+    background-color: #f8f8f8; 
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.header-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.header-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px;
+
+}
+
+.header-with-background {
+    padding: 20px;
+    height: 800px; 
+    background-image: url('../images/main.jpg'); 
+    background-size: cover;
+    background-position: center;
+  
+}
+
+@font-face {
+    font-family: 'Harrington';
+    src: url('path/to/harrington.woff') format('woff'); 
+}
+
+.logo {
+    font-family: 'Harrington', cursive; 
+    font-size: 25px; 
+    color:whitesmoke;
+    text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.3); 
+    letter-spacing: 2px; 
+    padding: 20px 0
+}
+
+.logo h1 {
+    text-align: center;
+    font-size: 22px;
+    margin: 0;
+    line-height: 1.2;
+}
+
+.logo .highlight {
+    font-size: 42px; 
+    color: whitesmoke; 
+}
+
+.top-section {
+    display: flex;
+    align-items: flex-start;
+}
+
+.categories {
+    margin-left: 120px;
+    text-decoration: none;
+    color: #333;
+    font-size: 12px;
+    text-align: center;
+}
+
+.categories a {
+    text-decoration: none;
+    color: #333;
+    margin-right: 30px; 
+    
+}
+
+.search-profile-cart a {
+    text-decoration: none;
+    color: whitesmoke;
+    margin-right: 15px; 
+    display: inline-block; 
+}
+
+.search-profile-cart a .icon {
+    width: 20px; 
+    height: 20px; 
+    margin-right: 5px; 
+    
+}
+
+.index-section {
+    position: absolute;
+    top: 50%; 
+    left: 50%; 
+    transform: translate(-50%, -50%); 
+    text-align: center;
+    font-family: 'Freestyle Script', cursive;
+}
+
+.index-section h2 {
+    font-size: 150px; 
+    margin-bottom: 20px; 
+    color: whitesmoke;
+    font-family: 'Freestyle Script', cursive;
+}
+
+.index-section button {
+    padding: 10px 30px; 
+    font-size: 20px; 
+    border-radius: 50px; 
+    background-color: black; 
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+.more-dropdown {
+    position: absolute;
+    bottom: 2px; 
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.more-dropdown select {
+    display: none; 
+}
+
+.more-dropdown span {
+    cursor: pointer;
+    padding: 5px 10px;
+
+}
+
+
+/*cakes sections */ 
+
+
+.cake-section {
+    margin-top: 100px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.flex-container {
+    text-align: center; 
+    margin: 0 5px;
+    flex: 1;
+    display: flex; 
+    flex-direction: column; 
+    align-items: center; 
+}
+
+.cake-image {
+    position: relative;
+    width: 400px;
+    height: 400px;
+}
+
+.cake-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 0px;
+}
+
+.image-text {
+    position: absolute;
+    bottom: 10px;
+    left: 100px;
+    color: white;
+    background: rgba(0, 0, 0, 0.5);
+    padding: 5px 10px;
+    font-size: 50px;
+    border-radius: 5px;
+    font-family: 'Freestyle Script', cursive;
+}
+
+/* About us */
+
+.about-us {
+    background-color: black;
+    color: white;
+    padding: 20px; 
+    
+}
+
+.about-us h2 {
+    font-size: 36px; 
+    margin-bottom: 10px; 
+    font-family: 'Bell MT', cursive;
+}
+
+.about-us p {
+    font-size: 15px; 
+    line-height: 1.6; 
+}
+
+
+/* about us images */
+
+.about-images {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.image-row {
+    display: flex;
+    flex-basis: 50%; 
+    flex-wrap: wrap;
+   
+}
+
+.image-row img {
+    width: calc(50% - 5px); 
+    height: 200px; 
+    object-fit: cover; 
+    margin-bottom: 5px;
+    margin-right: 5px;
+}
+
+
+/* Footer */ 
+
+footer {
+    background-color: black;
+    color: white; 
+}
+
+.footer-middle {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: white;
+    margin-top: 20px;
+}
+
+.subscription-form {
+    display: flex;
+    flex-direction: column;
+    background-color: black;
+    color: white;
+    padding: 20px;
+    
+}
+
+.subscription-form input[type="email"],
+.subscription-form input[type="text"],
+.subscription-form input[type="tel"],
+.subscription-form input[type="checkbox"],
+.subscription-form label {
+    margin-bottom: 10px;
+    background-color: black;
+    color: white;
+    border: 1px solid white; 
+    padding: 5px;
+    border-radius: 3px;
+}
+
+.subscription-form input[type="email"]::placeholder,
+.subscription-form input[type="text"]::placeholder,
+.subscription-form input[type="tel"]::placeholder {
+    color: white; 
+}
+
+.subscription-form button {
+    padding: 10px 10px;
+    font-size: 12px; 
+    max-width: 150px;
+    border: none;
+    background-color: white;
+    color: black;
+    cursor: pointer;
+    border-radius: 10px;
+   
+}
+
+.subscription-form button:hover {
+    background-color: #f0f0f0; 
+    color: black;
+}
+
+.social-icons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    gap: 10px;
+}
+
+.social-icons a {
+    margin: 0 5px; 
+}
+
+.social-icons img {
+    width: 40px; 
+    height: auto;
+}
+
+form p {
+    font-size: 10px; 
+}
+
+.payment-retailers img {
+    display: block;
+    margin: 300px auto; 
+    width: 100px; 
+    height: auto;
+}
+
+.shortcuts {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin-right: 200px;
+    margin-top: 20px;
+  }
+
+  .shortcuts a {
+    margin: 5px 10px; 
+    margin-top: 20px;
+  }
+
+  .social-icons p {
+  
+    display: block;
+    margin: 5px 50; 
+  }
+
+@media screen and (max-width: 768px) {
+    footer {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    section {
+        margin-bottom: 20px;
+    }
+}
+
+
+@media screen and (min-width: 769px) {
+    footer {
+        display: flex;
+        justify-content: space-around;
+        align-items: flex-start;
+    }
+
+    section {
+        flex: 1;
+        margin: 0 20px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    /* Styles for smaller screens */
+  }
+
+  @media screen and (max-width: 768px) {
+    /* Modify styles for header */
+    .header-container {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+}
